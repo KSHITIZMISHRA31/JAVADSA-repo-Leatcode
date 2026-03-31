@@ -2,6 +2,10 @@ package org.DataStructure;
 
 import com.sun.source.tree.Tree;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 class TreeNode{
      int data;
      TreeNode rNode;
@@ -76,6 +80,5 @@ public class BinarySearchTree {
             System.out.print(root.data + " ");
         }
     }
-
 
 }

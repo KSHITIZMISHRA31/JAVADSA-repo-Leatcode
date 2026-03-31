@@ -7,7 +7,6 @@ public class ArrayQueue {
     int tail = 0;
 
     public void insert(int val){
-
         if(isfull()){
             System.out.println("Queue is full");
             return;

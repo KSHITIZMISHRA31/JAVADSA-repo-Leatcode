@@ -1,5 +1,6 @@
 package org.DataStructure;
 
+
 public class Data_Structure_Manager {
 
     public void linkedListWrking(){
@@ -205,6 +206,9 @@ public class Data_Structure_Manager {
         bTree.preOrder();
         bTree.postOrder();
 
+        int a = 5;
+        int b = 7;
+        System.out.println(Math.max(a,b));
 
 
     }
