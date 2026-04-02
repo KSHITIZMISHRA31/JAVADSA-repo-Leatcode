@@ -1,8 +1,6 @@
 package org.LeatCode.prblms.Array;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 
 public class SetMatrixZeroes {
 
@@ -16,8 +14,8 @@ public class SetMatrixZeroes {
             for (int j=0; j< matrix[i].length ; j++){
                 System.out.print(matrix[i][j]+" ");
                 if( matrix[i][j]==0){
-                    xcol.add(i,1);
-                    ycol.add(j,1);
+                    xcol.add(i);
+                    ycol.add(j);
                 }
             }
             System.out.println();
