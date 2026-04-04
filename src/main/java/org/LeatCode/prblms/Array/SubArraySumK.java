@@ -24,6 +24,10 @@ public class SubArraySumK {
         for(int i = 0 ;i<nums.length;i++){
 
             sum = sum + nums[i];
+            if(sum == k)
+            {
+                max = Math.max(max,i+1);
+            }
             if(hm.containsKey(sum - k)){
                 max = Math.max(max,i-hm.get(sum-k));
             }
