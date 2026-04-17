@@ -2,6 +2,9 @@ package org.LeatCode.prblms.String;
 
 public class ShrtstDistnctoTrgtStrngCrclrAry {
 
+    //===========================
+    //Better Approach
+    //===========================
     public static int closestTarget(String[] words, String target, int startIndex) {
 
         int nrstRght = Integer.MAX_VALUE;
