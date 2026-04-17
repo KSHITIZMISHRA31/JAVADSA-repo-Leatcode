@@ -6,6 +6,9 @@ import java.util.List;
 
 public class ClstEqlElmtQur {
 
+    ///=========================
+    /// Better approach
+    /// ========================
 
     public static int closestVal(int[] words, int target, int startIndex) {
         int n = words.length;
