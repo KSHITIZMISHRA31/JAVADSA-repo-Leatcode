@@ -21,15 +21,11 @@ public class NextSmallerElementRight {
             st.push(arr[i]);
         }
         System.out.println(st);
-
         return rslt;
     }
-
-
 
     public static void main(String[] args) {
         int[] nums = {2,10,12,1,11};
         System.out.println(Arrays.toString(nextSmallerElementRight(nums)));
-
     }
 }
