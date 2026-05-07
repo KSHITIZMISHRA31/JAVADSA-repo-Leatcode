@@ -18,42 +18,12 @@ public class AdjecyMatrix {
         }
         HashMap<Integer,ArrayList<Integer>> arr = new HashMap<>();
         for(int[] i : graph){
-
-            if(!arr.containsKey(i[0]) && !arr.containsKey(i[1])){
-                ArrayList<Integer> pair = new ArrayList<>();
-                pair.add(i[1]);
-                arr.put(i[0],pair);
-                ArrayList<Integer> pair1 = new ArrayList<>();
-                pair1.add(i[0]);
-                arr.put(i[1],pair1);
-            }
-            else if(!arr.containsKey(i[0]) && arr.containsKey(i[1])){
-                ArrayList<Integer> pair = new ArrayList<>();
-                pair.add(i[1]);
-                arr.put(i[0],pair);
-                ArrayList<Integer> pair1 = arr.get(i[1]);
-                pair1.add(i[0]);
-                arr.put(i[1],pair1);
-            }
-            else if(arr.containsKey(i[0]) && !arr.containsKey(i[1])){
-                ArrayList<Integer> pair = new ArrayList<>();
-                pair.add(i[0]);
-                arr.put(i[1],pair);
-                ArrayList<Integer> pair1 = arr.get(i[0]);
-                pair1.add(i[1]);
-                arr.put(i[0],pair1);
-            }
-            else{
-                ArrayList<Integer> pair = arr.get(i[1]);
-                pair.add(i[0]);
-                arr.put(i[1],pair);
-                ArrayList<Integer> pair1 = arr.get(i[0]);
-                pair1.add(i[1]);
-                arr.put(i[0],pair1);
-            }
+            int u = i[0];
+            int v = i[1];
+            arr.computeIfAbsent(u, k->new ArrayList<>()).add(v);
+            arr.computeIfAbsent(v,k->new ArrayList<>()).add(u);
         }
         System.out.println(arr);
-
     }
 
 
