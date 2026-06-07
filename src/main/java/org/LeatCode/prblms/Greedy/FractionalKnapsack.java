@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class FractionalKnapsack {
 
+    // Basic Approach
     public static double fractionalKnapsack(int[] val, int[] wt, long cap) {
         // Your code goes here
         double ans = 0;
