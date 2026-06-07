@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class LeftandRightSumDifferences {
 
+    //Leat code Problem
     public static int[] leftRightDifference(int[] nums) {
         int[] res = new int[nums.length];
         int[] left = new int[nums.length];
