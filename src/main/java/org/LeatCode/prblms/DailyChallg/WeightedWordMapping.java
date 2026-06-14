@@ -2,6 +2,8 @@ package org.LeatCode.prblms.DailyChallg;
 
 public class WeightedWordMapping {
 
+
+    /// Optimized Approach
     public static String mapWordWeights(String[] words, int[] weights) {
 
         StringBuilder res = new StringBuilder();
